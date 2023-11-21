@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      /* Resetting default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      /* Styles for the card */
+      .card {
+        width: 100%;
+        max-width: 500px; /* Adjust maximum width as needed */
+        margin: 20px auto;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        overflow: hidden;
+      }
+
+      .custom-border {
+        background-color: #512225;
+        max-width: 600px;
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100%; */
+        /* border: 2px solid #fff; */
+      }
+
+      .logo {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn-red {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 20px;
+        background: #f2656f;
+        color: #fffbff;
+        border-radius: 8px;
+        max-width: 223px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* .btn-red:hover {
+        background-color: rgb(255, 51, 0);
+      } */
+
+      .card-img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .link-text {
+        color: #8d898a;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: -0.28px;
+        margin-top: 5px;
+      }
+
+      .card-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        color: #544e50;
+      }
+
+      .card-text {
+        font-size: 14px;
+        color: #544e50;
+        font-weight: 400;
+        margin-bottom: 24px;
+        line-height: 20px;
+        letter-spacing: -0.28px;
+      }
+
+      .sm-db-text {
+        color: #716c6d;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.28px;
+        margin-top: 20px;
+      }
+      .sub-text {
+        color: #544e50;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: -0.28px;
+        margin-top: 20px;
+      }
+      .text-red {
+        color: #f2656f;
+        text-decoration: underline;
+      }
+      .contact-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .credib-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+      }
+      .address-socials {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 4px;
+      }
+      .horizontal-line {
+        height: 1px;
+        background-color: #dddcdc;
+        width: 100%;
+        margin-top: 24px;
+      }
+      .quote_info {
+        color: #716c6d;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .website {
+        color: #f2656f;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+      .social {
+        display: flex;
+        align-items: start;
+        gap: 16px;
+      }
+
+      /* Media query for responsiveness */
+      @media (max-width: 768px) {
+        .card {
+          max-width: 100%;
+        }
+
+        .custom-border {
+          height: 100px;
+        }
+        .card-title {
+          font-size: 20px;
+        }
+
+        .card-text {
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+
+        .link-text,
+        .sm-db-text {
+          font-size: 12px;
+          margin-top: 15px;
+        }
+        .quote_info,
+        .website {
+          font-size: 12px;
+        }
+        .horizontal-line {
+          margin-top: 18px;
+        }
+        .contact-info {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .address-socials {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .social {
+          margin-top: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="custom-border">
+        <img src="/assets/logo-white.png" class="logo" alt="logo-white" />
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">Hi Frank,</h2>
+        <p class="card-text">
+          We have received a password reset request for your account. To
+          proceed, please click the button below to reset your password
+        </p>
+        <!-- <a href="#" class="btn">Read More</a> -->
+        <button class="btn-red">Reset Password</button>
+        <p class="link-text">The password reset link will expire in 1 hour</p>
+
+        <p class="sm-db-text">
+          Didn't initiate a password reset request? Please contact
+          <span class="text-red">contact@credib.io</span>
+        </p>
+
+        <div class="sub-content">
+          <p class="sub-text">Best Regards</p>
+          <p class="sub-text" style="margin-top: 4px">Credib Team</p>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div class="contact-info">
+          <div class="credib-info">
+            <img src="/assets/credib-logo.png" alt="logo" />
+            <p class="quote_info" style="white-space: nowrap">
+              We plan, You party
+            </p>
+            <p class="website">www.credib.com</p>
+          </div>
+          <div class="address-socials">
+            <div class="social">
+              <img src="/assets/fb.png" alt="facebook" />
+              <img src="/assets/twit.png" alt="twitter" />
+              <img src="/assets/instag.png" alt="instagram" />
+            </div>
+            <p class="quote_info" style="width: 85%">
+              No 27B, Uyo Street, Rumuomasi, Port Harcourt
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
